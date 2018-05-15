@@ -1,0 +1,73 @@
+.backGround {
+    background: black url(http://www1.pcgames.com.cn/zt/gz20150930/lol/images/banner.jpg?t=20150930) center top no-repeat;
+}
+
+.marginLR10 {
+    margin: 0 10px;
+}
+
+.marginBT10 {
+    margin: 10px 0;
+}
+
+.chooseHero {
+    margin-top: 50px;
+    height: 301px;
+}
+
+.scrollDiv {
+    overflow: scroll;
+}
+
+.skinImg {
+    width: 1100px;
+    height: 560px;
+}
+
+.LOLBG {
+    background-image: url("LOLBG.jpg");
+}
+
+.fileInput {
+    font-size: 10px;
+    filter: alpha(opacity=0);
+    width: 170px;
+    color: #2890ff;
+}
+
+.posLeft {
+    left: 150px;
+}
+
+#demo {
+    position: relative;
+}
+
+#form {
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: 100;
+    min-width: 183px;
+    min-height: 560px;
+}
+
+#skinSrc {
+    background-color: transparent;
+    color: #fff;
+    display: none;
+    resize: none;
+}
+#skinSrc::placeholder{
+    content: '输入图片的地址';
+}
+
+.newImg-thumbnail {
+    padding: .25rem;
+    background-color: #000000;
+    border: 1px solid #382044;
+    border-radius: .25rem;
+    max-width: 100%;
+    height: auto
+}

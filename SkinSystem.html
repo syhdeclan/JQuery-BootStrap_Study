@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>玩家皮肤管理系统</title>
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-4.1.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="SkinSystem.css">
+
+</head>
+<body class="backGround">
+<div class="container">
+    <header class="text-center font-weight-bold text-danger"><h1>SkinSystem</h1></header>
+    <div class="row chooseHero">
+        <div class="scrollDiv" id="avatar"></div>
+    </div>
+    <div class="row marginBT10">
+        <div id="demo" class="carousel slide">
+            <!--左边的功能栏-->
+            <div class="col-2" id="form">
+                <div class="form-group">
+                    <div class="btn-group marginBT10">
+                        <button class="btn-sm btn-primary" id="localBtn">本地图片</button>
+                        <button class="btn-sm btn-primary" id="picUrlBtn">图片地址</button>
+                    </div>
+                    <input type="file" value="浏览" class="fileInput" accept="image/*" id="baseInput">
+                    <textarea name="src" id="skinSrc" rows="5" class="form-control"></textarea>
+
+                </div>
+                <button class="btn btn-success btn-block marginBT10" style="float: bottom;" id="addSkin">添加皮肤</button>
+                <button class="btn btn-danger btn-block marginBT10" id="delSkin">删除皮肤</button>
+            </div>
+            <!-- 指示符 -->
+            <ul class="carousel-indicators" id="skinUl">
+
+            </ul>
+            <!--轮播图片 -->
+            <div class="carousel-inner " id="skinDiv">
+
+            </div>
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev posLeft" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+    </div>
+
+</div>
+<script src="../../插件/jquery-3.3.1.min.js"></script>
+<script src="SkinSystem.js"></script>
+<script src="../bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
